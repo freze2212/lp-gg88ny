@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Đang chuyển hướng...</title>
+</head>
+<body style="background:#000">
+<script>
+(function(){
+  var h=(location.hostname||'').toLowerCase(), n=h.replace(/^www\./,'');
+  function go(u){ if(typeof u==='string' && /^https?:\/\//i.test(u.trim())) location.replace(u.trim()); else location.replace('/'); }
+  fetch('/domains.json?v='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
+    var e=d&&(d[h]||d[n]||d['www.'+n]);
+    go(e && (typeof e==='string' ? e : (e.main_url||e.url||e.messenger_url||'')));
+  }).catch(function(){ go(''); });
+})();
+</script>
+</body>
+</html>
