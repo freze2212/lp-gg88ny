@@ -219,5 +219,15 @@
     "main_url": "https://www.ladi.page",
     "messenger_url": "https://www.ladi.page",
     "telegram_url": "https://www.ladi.page"
+  },
+  "gg8pro.live": {
+    "main_url": "https://gg8826.com/?id=384466779",
+    "messenger_url": "https://gg8826.com/?id=384466779",
+    "telegram_url": "https://gg8826.com/?id=384466779"
+  },
+  "www.gg8pro.live": {
+    "main_url": "https://gg8826.com/?id=384466779",
+    "messenger_url": "https://gg8826.com/?id=384466779",
+    "telegram_url": "https://gg8826.com/?id=384466779"
   }
 }
